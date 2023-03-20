@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Mouse Over</title>
+    <style>
+        div {
+            background-color: lightgrey;
+            width: 300px;
+            border: 15px solid rgb(0, 4, 128);
+            padding: 90px;
+            margin: 100px 0px 20px 362px;
+        }
+    </style>
+</head>
+
+<body>
+    <div onmouseover="EventHandler();"  id="s">Bring your mouse here to see the magic</div>
+    <script>
+        setTimeout(show,3000)
+        function EventHandler() {
+            document.getElementById("s").innerHTML="<center><b>I love you Pooja</b></center>";
+
+        }
+        function show(){
+            document.getElementById("s").innerHTML="<center><h1>Just Kidding😆😛</h1></center>";
+        } 
+        
+    </script>
+</body>
+
+</html>
